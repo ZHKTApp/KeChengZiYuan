@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+android libraryAndroid
+dependencies {
+    api fileTree(dir: 'libs', include: '*.jar')
+    api project(':modules:eclipse:wheel')
+    api project(':modules:studio:logger')
+    api project(':modules:studio:mayigeek')
+    api project(':modules:studio:nestrefreshlayout')
+    api project(':modules:studio:mqtt')//如果不启用注释了就可以
+    //________________________________________________
+    compile "com.github.bumptech.glide:glide:$GLIDE"
+}

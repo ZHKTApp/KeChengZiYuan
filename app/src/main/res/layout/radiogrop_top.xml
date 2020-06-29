@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="61dp"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="640dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rt_internet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="网络课程"
+            android:textSize="@dimen/textsize_18sp" />
+
+        <View
+            android:id="@+id/internet_view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/c_green" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray_efef" />
+
+    <LinearLayout
+        android:layout_width="640dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rt_e_book"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="电子书"
+            android:textSize="@dimen/textsize_18sp" />
+
+        <View
+            android:id="@+id/ebook_view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/c_green"
+            android:visibility="gone" />
+    </LinearLayout>
+</RadioGroup>

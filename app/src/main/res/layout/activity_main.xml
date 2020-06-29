@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rg_top"
+        layout="@layout/radiogrop_top" />
+
+    <include
+        android:id="@+id/tg_left"
+        layout="@layout/radiogroup_left" />
+
+    <include
+        android:id="@+id/rlfilter"
+        layout="@layout/top_filter" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlfilter"
+        android:layout_toRightOf="@id/tg_left"
+        android:background="@color/gray_efef">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </FrameLayout>
+
+
+</RelativeLayout>
